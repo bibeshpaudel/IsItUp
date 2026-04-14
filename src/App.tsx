@@ -16,7 +16,7 @@ import { NotFound } from './components/NotFound';
 export default function App() {
   return (
     <ErrorBoundary>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <VersionUpdateToast />
         <Routes>
           <Route path="/" element={<Landing />} />
