@@ -34,7 +34,7 @@ export default function Login() {
         await authService.login(email, password);
         setShowSuccess(true);
         setTimeout(() => {
-          navigate('/app');
+          navigate(`${import.meta.env.BASE_URL}app`);
         }, 2000);
       } catch (err) {
         setLoading(false);
@@ -135,7 +135,7 @@ export default function Login() {
             </button>
             <button className="flex items-center justify-center gap-2 py-[11px] px-4 bg-paper border border-border rounded-md font-mono text-[12px] text-ink cursor-pointer transition-all hover:bg-paper-2 hover:shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#FC6D26" xmlns="http://www.w3.org/2000/svg">
-                <path d="M23.955 9.497c-.055-.165-1.921-5.911-1.921-5.911a.852.852 0 0 0-1.614 0s-1.258 3.864-1.282 3.945H4.86c-.024-.081-1.282-3.945-1.282-3.945a.852.852 0 0 0-1.614 0S.1 9.332.045 9.497c-.057.172-.016.368.106.5l11.758 8.784a.151.151 0 0 0 .18 0L23.85 9.997c.123-.132.164-.328.105-.5z"/>
+                <path d="M23.955 9.497c-.055-.165-1.921-5.911-1.921-5.911a.852.852 0 0 0-1.614 0s-1.258 3.864-1.282 3.945H4.86c-.024-.081-1.282-3.945-1.282-3.945a.852.852 0 0 0-1.614 0S.1 9.332.045 9.497c-.057.172-.016.368.106.5l11.758 8.784a.151.151 0 0 0 .18 0L23.85 9.997c.123-.132.164-.328.105-.5z" />
               </svg>
               GitLab
             </button>
