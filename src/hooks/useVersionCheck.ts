@@ -13,7 +13,7 @@ export function useVersionCheck() {
     const checkForUpdate = async () => {
       try {
         // Appending a timestamp query string bypasses the browser cache, ensuring we always hit the server
-        const response = await fetch(`/version.json?t=${new Date().getTime()}`);
+        const response = await fetch(`${import.meta.env.BASE_URL}version.json?t=${new Date().getTime()}`);
         if (!response.ok) return;
 
         const data = await response.json();

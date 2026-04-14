@@ -33,7 +33,7 @@ export default function Landing() {
       {/* NAV */}
       <nav className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between py-[18px] px-6 lg:px-12 bg-cream/90 backdrop-blur-md border-b border-border">
         <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2.5 font-serif text-[20px] font-bold tracking-[-0.5px] text-ink no-underline">
-          <img src="/icon-animated.svg" alt="" className="w-5 h-5" />
+          <img src={`${import.meta.env.BASE_URL}icon-animated.svg`} alt="" className="w-5 h-5" />
           IsItUp
         </Link>
         <ul className="hidden lg:flex items-center gap-8 list-none">
@@ -333,7 +333,7 @@ export default function Landing() {
         <div className="bg-[#111118] rounded-xl overflow-hidden border border-white/5 shadow-[0_40px_100px_rgba(0,0,0,0.4)] opacity-0 translate-y-[30px] transition-all duration-700 fade-up">
           <div className="flex items-center justify-between py-3.5 px-6 bg-white/5 border-b border-white/5 gap-5">
             <div className="font-serif text-[16px] text-cream flex items-center gap-2 shrink-0">
-              <img src="/icon-animated.svg" alt="" className="w-4 h-4 shrink-0" />
+              <img src={`${import.meta.env.BASE_URL}icon-animated.svg`} alt="" className="w-4 h-4 shrink-0" />
               IsItUp
             </div>
             <div className="hidden sm:flex gap-1">
@@ -568,7 +568,7 @@ export default function Landing() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-12">
           <div className="lg:col-span-2">
             <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="font-serif text-[18px] text-cream mb-3.5 flex items-center gap-2 bg-transparent border-none cursor-pointer p-0 hover:text-white transition-colors">
-              <img src="/icon-animated.svg" alt="" className="w-4 h-4 inline-block" />
+              <img src={`${import.meta.env.BASE_URL}icon-animated.svg`} alt="" className="w-4 h-4 inline-block" />
               IsItUp
             </button>
             <p className="text-[13px] leading-[1.7] max-w-[280px]">Cloud-based monitoring for developers and teams who care about reliability. API and website uptime monitoring, real-time alerts, and diagnostics in one platform.</p>

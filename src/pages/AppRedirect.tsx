@@ -9,7 +9,7 @@ export default function AppRedirect() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-cream text-ink">
       <div className="flex flex-col items-center gap-4">
-        <img src="/icon-animated.svg" alt="" className="w-10 h-10" />
+        <img src={`${import.meta.env.BASE_URL}icon-animated.svg`} alt="" className="w-10 h-10" />
         <p className="font-mono text-muted">Redirecting to application...</p>
       </div>
     </div>
