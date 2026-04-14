@@ -34,7 +34,7 @@ export default function Login() {
         await authService.login(email, password);
         setShowSuccess(true);
         setTimeout(() => {
-          navigate(`${import.meta.env.BASE_URL}app`);
+          navigate('/app');
         }, 2000);
       } catch (err) {
         setLoading(false);

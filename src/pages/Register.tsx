@@ -59,7 +59,7 @@ export default function Register() {
         await authService.register(formData);
         setShowSuccess(true);
         setTimeout(() => {
-          navigate(`${import.meta.env.BASE_URL}app`);
+          navigate('/app');
         }, 2200);
       } catch (err) {
         setLoading(false);
